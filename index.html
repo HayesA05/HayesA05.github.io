@@ -1,8 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Andrew Hayes | Computer Science ePortfolio</title>
   <link rel="stylesheet" href="style.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Base styling */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0.5rem 0 1rem;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      color: #1e1e1e;
+      border-bottom: 2px solid #1e1e1e;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .project {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      border-left: 4px solid #007acc;
+      background-color: #f9f9f9;
+      border-radius: 4px;
+    }
+
+    .project h3 {
+      margin-top: 0;
+      color: #007acc;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #007acc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
 <body>
 
@@ -28,36 +119,38 @@
 <section id="projects">
   <h2>Projects</h2>
 
-   <h3>Reinforcement Learning Agent</h3>
-  <p>
-    This project demonstrates an AI agent that utilizes reinforcement learning (RL) principles. 
-    The agent learns to navigate an environment and make decisions based on rewards and penalties, 
-    balancing exploration and exploitation to optimize its behavior.
-  </p>
-  <p>
-    For this project, I built on provided starter code and adjusted the Q-train training loop. 
-    I implemented learning value updates and produced progress reports every 10 wins, 
-    allowing us to monitor and improve the agent’s decision-making. 
-    I also experimented with different parameters, including the learning rate, discount factor, 
-    and exploration rate, to enhance agent performance while ensuring a fair balance between exploration and exploitation.
-  </p>
-  <a href="https://github.com/HayesA05/Maze-Model" target="_blank">
-    View Project
-  </a>
-  
-  <h3>Full Stack Travel Application</h3>
-  <p>
-    Developed using MongoDB, Express, Angular, and Node.js (MEAN stack) with authentication and CRUD functionality. 
-    Enhancements include improved UI/UX and full-stack database integration.
-  </p>
-  <a href="https://github.com/HayesA05/cs465-fullstack/branches" target="_blank">View Project</a>
+  <div class="project">
+    <h3>Course Planner</h3>
+    <p>
+      C++ code utilizing a SQLite database for course catalogs.
+    </p>
+    <a href="https://github.com/HayesA05/The-Gaming-Room" target="_blank">View Project</a>
+  </div>
 
-  <h3>Draw It or Lose It</h3>
-  <p>
-    Java-based multiplayer game implementing design patterns such as Singleton and Iterator. 
-    Enhancements include modularization and efficient game state management.
-  </p>
-  <a href="https://github.com/HayesA05/The-Gaming-Room" target="_blank">View Project</a>
+  <div class="project">
+    <h3>Reinforcement Learning Agent</h3>
+    <p>
+      This project demonstrates an AI agent that utilizes reinforcement learning (RL) principles. 
+      The agent learns to navigate an environment and make decisions based on rewards and penalties, 
+      balancing exploration and exploitation to optimize its behavior.
+    </p>
+    <p>
+      Built on starter code, adjusted the Q-train loop, implemented learning value updates, 
+      and monitored progress every 10 wins. Experimented with learning rate, discount factor, 
+      and exploration rate to improve performance.
+    </p>
+    <a href="https://github.com/HayesA05/Maze-Model" target="_blank">View Project</a>
+  </div>
+
+  <div class="project">
+    <h3>Full Stack Travel Application</h3>
+    <p>
+      Developed using MongoDB, Express, Angular, and Node.js (MEAN stack) with authentication and CRUD functionality. 
+      Enhancements include improved UI/UX and full-stack database integration.
+    </p>
+    <a href="https://github.com/HayesA05/cs465-fullstack/branches" target="_blank">View Project</a>
+  </div>
+
 </section>
 
 <section id="resume">
