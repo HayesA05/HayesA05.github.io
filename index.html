@@ -90,8 +90,19 @@
       text-decoration: underline;
     }
 
+    .video-container {
+      margin-top: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
     p {
       margin-bottom: 1rem;
+    }
+
+    ul {
+      margin-top: 0.5rem;
     }
   </style>
 </head>
@@ -111,11 +122,10 @@
   <h2>About Me</h2>
   <p>
     Hello! My name is Andrew, and I’m a Computer Science student who loves building software and solving problems. 
-I’ve spent a lot of time working with algorithms, data structures, and database-driven applications, 
-and my portfolio highlights some of the projects I’m most proud of. I enjoy figuring out how things work, 
-finding better ways to do them, and learning new tools along the way. This collection reflects my growth 
-and my excitement for tackling real-world coding challenges.
-
+    I’ve spent a lot of time working with algorithms, data structures, and database-driven applications, 
+    and my portfolio highlights some of the projects I’m most proud of. I enjoy figuring out how things work, 
+    finding better ways to do them, and learning new tools along the way. This collection reflects my growth 
+    and my excitement for tackling real-world coding challenges.
   </p>
 </section>
 
@@ -123,13 +133,12 @@ and my excitement for tackling real-world coding challenges.
   <h2>Projects</h2>
 
   <div class="project">
-  <h3>Course Planner</h3>
-  <p>
-    A C++ application designed to manage university course catalogs using both CSV files and a SQLite database. 
-    The program allows students to browse courses, view detailed information, filter by major, and track prerequisites.
-  </p>
-  <p>
-    Key features include:
+    <h3>Course Planner</h3>
+    <p>
+      A C++ application designed to manage university course catalogs using both CSV files and a SQLite database. 
+      The program allows students to browse courses, view detailed information, filter by major, and track prerequisites.
+    </p>
+
     <ul>
       <li>Loading course data from CSV files or a SQLite database</li>
       <li>Displaying sorted course lists and detailed course information, including prerequisites</li>
@@ -138,20 +147,44 @@ and my excitement for tackling real-world coding challenges.
       <li>CRUD operations (Create, Read, Update, Delete) on courses and prerequisites</li>
       <li>Use of software design patterns like Singleton and Iterator for efficient data and state management</li>
     </ul>
-  </p>
-  <p>
-    This project demonstrates skills in C++ programming, database integration, software design principles, 
-    and modular application development. Emphasis was placed on code readability, maintainability, 
-    and proper separation of concerns, making it easy to extend the system with additional features. 
-  </p>
-  <a href="https://github.com/HayesA05/CS-499-Final-Project" target="_blank">View Project</a>
-</div>
 
+    <p>
+      This project demonstrates skills in C++ programming, database integration, software design principles, 
+      and modular application development. Emphasis was placed on code readability, maintainability, 
+      and proper separation of concerns.
+    </p>
+
+    <h4>Technical Code Review & Architecture Walkthrough</h4>
+    <p>
+      This video walkthrough explains the overall system architecture, data structure decisions, 
+      database integration with SQLite, and implementation of design patterns such as Singleton and Iterator.
+    </p>
+
+    <div class="video-container">
+      <iframe 
+        width="100%" 
+        height="400"
+        src="https://www.youtube.com/embed/avebHf0FYmI"
+        title="Course Planner Code Review"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <ul>
+      <li>Explains data structure selection and runtime considerations</li>
+      <li>Demonstrates CRUD operations with SQLite integration</li>
+      <li>Reviews authentication logic and role-based functionality</li>
+      <li>Discusses scalability and future improvement opportunities</li>
+    </ul>
+
+    <a href="https://github.com/HayesA05/CS-499-Final-Project" target="_blank">View Project</a>
+  </div>
 
   <div class="project">
     <h3>Reinforcement Learning Agent</h3>
     <p>
-      This project demonstrates an AI agent that utilizes reinforcement learning (RL) principles. 
+      This project demonstrates an AI agent that utilizes reinforcement learning principles. 
       The agent learns to navigate an environment and make decisions based on rewards and penalties, 
       balancing exploration and exploitation to optimize its behavior.
     </p>
@@ -159,7 +192,6 @@ and my excitement for tackling real-world coding challenges.
       Built on starter code, adjusted the Q-train loop, implemented learning value updates, 
       and monitored progress every 10 wins. Experimented with learning rate, discount factor, 
       and exploration rate to improve performance.
-      If you would like to see this project please email me for access.
     </p>
     <a href="https://github.com/HayesA05/Maze-Model" target="_blank">View Project</a>
   </div>
@@ -169,7 +201,6 @@ and my excitement for tackling real-world coding challenges.
     <p>
       Developed using MongoDB, Express, Angular, and Node.js (MEAN stack) with authentication and CRUD functionality. 
       Enhancements include improved UI/UX and full-stack database integration.
-      If you would like to see this project please email me for access.
     </p>
     <a href="https://github.com/HayesA05/cs465-fullstack/branches" target="_blank">View Project</a>
   </div>
